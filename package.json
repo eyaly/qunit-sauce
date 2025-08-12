@@ -1,0 +1,18 @@
+{
+  "name": "qunit-sauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8080 .",
+    "test:local": "node run-local.js",
+    "test:sauce": "node run-sauce.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "selenium-webdriver": "^4.34.0"
+  }
+}

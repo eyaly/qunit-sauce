@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>QUnit tests</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.1.css">
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script src="https://code.jquery.com/qunit/qunit-2.20.1.js"></script>
+    <script>
+      QUnit.done(function (details) {
+        // details = { passed, failed, total, runtime }
+        window.__qunit__ = details;
+        document.title = details.failed ? "QUNIT_FAILED" : "QUNIT_PASSED";
+      });
+    </script>
+    <script src="./tests.js"></script>
+  </body>
+</html>
